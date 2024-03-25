@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bszabo <bszabo@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: seckhard <seckhard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 13:37:09 by bszabo            #+#    #+#             */
-/*   Updated: 2024/03/11 10:25:07 by bszabo           ###   ########.fr       */
+/*   Updated: 2024/03/25 22:51:27 by seckhard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ typedef struct s_cmd
 typedef struct s_data
 {
 	char	**env; // copy of the environment
+	char	**path;
 	char	*line; // "ls -l | sort | grep a > output.txt"
 	char	**line_split; // split by "|" {"ls -l", "sort", "grep a > output.txt"}
 	char	**cmd_paths; // array of paths to commands
