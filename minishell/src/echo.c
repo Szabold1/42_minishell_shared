@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pwd.c                                              :+:      :+:    :+:   */
+/*   echo.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seckhard <seckhard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/25 22:10:57 by seckhard          #+#    #+#             */
-/*   Updated: 2024/03/26 20:51:21 by seckhard         ###   ########.fr       */
+/*   Created: 2024/03/26 22:02:33 by seckhard          #+#    #+#             */
+/*   Updated: 2024/03/26 22:30:37 by seckhard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-int	get_pwd(t_data *data)
+int	flag_check(char *input)
 {
-	char	*tmp;
-
-	data->exit_status = 0;
-	tmp = getcwd(NULL, 0);
-	if (!tmp)
-		exit(ERROR);
-	printf("%s\n", tmp);
-	free(tmp);
+	if (!input || *input != '-')
+		return (ERROR);
+	input++;
+	while (*input)
+	{
+		if (input != 'n')
+			return (ERROR);
+		input++;
+	}
 	return (OK);
+}
+
+void	echo(t_data *data, t_cmd *command)
+{
+	
 }
