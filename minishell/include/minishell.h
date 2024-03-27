@@ -6,7 +6,7 @@
 /*   By: seckhard <seckhard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 13:37:09 by bszabo            #+#    #+#             */
-/*   Updated: 2024/03/25 22:51:27 by seckhard         ###   ########.fr       */
+/*   Updated: 2024/03/27 22:43:04 by seckhard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ typedef struct s_cmd
 {
 	char	**cmd_array; // {"ls", "-l", NULL}
 	char	*cmd_path; // "/bin/ls"
+	int		argc; // argument counter
 }	t_cmd;
 
 // Define the main data structure

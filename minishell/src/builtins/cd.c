@@ -6,7 +6,7 @@
 /*   By: seckhard <seckhard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 21:52:23 by seckhard          #+#    #+#             */
-/*   Updated: 2024/03/25 22:46:49 by seckhard         ###   ########.fr       */
+/*   Updated: 2024/03/27 22:45:20 by seckhard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int change_dir(t_data *data, char *path, char *pwd)
 	}
 }
 
-int	cd(t_data *data, t_cmd commands)
+int	cd(t_data *data, t_cmd cmd)
 {
 	
 }

@@ -19,6 +19,7 @@ LIBFT = $(LIBFT_DIR)/libft.a
 # Other directories
 OBJ_DIR = ./obj
 INCLUDE_DIR = ./include
+BUILTINS_DIR = ./builtins
 
 # Compiler and flags
 CC = cc
